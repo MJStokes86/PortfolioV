@@ -1,0 +1,1 @@
+[14-Feb-2017 22:10:13 America/Detroit] PHP Fatal error:  Call to undefined function get_header() in /home/mjstokes/public_html/wp-content/themes/bkny/js/front-page.php on line 1
