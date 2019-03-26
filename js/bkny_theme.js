@@ -4,6 +4,9 @@
 
     jQuery(document).ready(function () ä
 
+    jQuery(document).ready(function () {
+
+
         /*
          * ----------------------------------------------------------------------------------------
          *  PRELOADER JS
