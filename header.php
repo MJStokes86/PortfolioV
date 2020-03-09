@@ -1,21 +1,23 @@
 <!DOCTYPE html> 
 <html <?php language_attributes(); ?>> 
 <head>     
-<meta charset="<?php  bloginfo('charset'); ?>">     
-<title><?php  bloginfo('name');?> <?php wp_title(); ?></title> 
+<meta charset="<?php bloginfo( 'charset' ); ?>">     
+<title><?php bloginfo( 'name' ); ?> <?php wp_title(); ?></title> 
 <meta name="viewport" content="width=device-width, 
-    minimum-scale=1.0, maximum-scale=1.0">
-<meta name="description" content="<?php bloginfo('description'); ?>"> 
-<?php if( is_singular() )
-wp_enqueue_script( 'comment-reply' );  ?> 
+	minimum-scale=1.0, maximum-scale=1.0">
+<meta name="description" content="<?php bloginfo( 'description' ); ?>"> 
+<?php
+if ( is_singular() ) {
+	wp_enqueue_script( 'comment-reply' );}
+?>
+ 
 <?php wp_head(); ?>     
 <meta name="google-site-verification" content="DdV-3oSjd8nkwrbwTVqiMRgZIrc2p6jDa8lKJ68Q_0g" />
 <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">     
 <link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
-<link rel="shortcut icon" href="<?php bloginfo('template_directory');?>/img/Logo.ico">
+<link rel="shortcut icon" href="<?php bloginfo( 'template_directory' ); ?>/img/Logo.ico">
 <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Montserrat:300,400,500,600,700,800,900&amp;subset=latin-ext" rel="stylesheet">
-<link href="https://file.myfontastic.com/zS5BGnD45yUTsEKpdeGxeb/icons.css" rel="stylesheet">
-
+<link href="https://file.myfontastic.com/zS5BGnD45yUTsEKpdeGxeb/icons.css" rel="stylesheet">		
 
 <script type="text/javascript" src="https://use.fontawesome.com/a46e157fb6.js"></script>     
 <script type="text/javascript" src='https://www.google.com/recaptcha/api.js'></script>
@@ -29,23 +31,25 @@ wp_enqueue_script( 'comment-reply' );  ?>
 </head>
 
 
-<?php 
+<?php
 
-if(is_home()){
-	$bkny_classes = array('bkny_class', 'my-class');
+if ( is_home() ) {
+	$bkny_classes = array( 'bkny_class', 'my-class' );
+} else {
+	$bkny_classes = array( 'no-bkny-class' );
 }
-else{
-	$bkny_classes = array('no-bkny-class');
-}
 
 
 
- ?>
+?>
 
 
-<body <?php body_class($bkny_classes); ?>>
+<body <?php body_class( $bkny_classes ); ?>>
 
-<?php if ( function_exists( 'gtm4wp_the_gtm_tag' ) ) { gtm4wp_the_gtm_tag(); } ?>
+<?php
+if ( function_exists( 'gtm4wp_the_gtm_tag' ) ) {
+	gtm4wp_the_gtm_tag(); }
+?>
 
 
 <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-5HP9VXZ"

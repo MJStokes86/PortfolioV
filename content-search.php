@@ -8,35 +8,34 @@
 			
 		<div class="col-xs-4">
 			<div class="pull-left">
-				<?php the_post_thumbnail('medium'); ?>
+				<?php the_post_thumbnail( 'medium' ); ?>
 			</div>
 
 
 		</div>
 
 		<div class="col-xs-4 results-content">
-		<?php the_title() ?>
-		<?php if(has_post_thumbnail()):  ?>
+		<?php the_title(); ?>
+		<?php if ( has_post_thumbnail() ) : ?>
 
 		<?php endif; ?>
 
 		<?php the_excerpt(); ?>
-		<a href="<?php the_permalink();  ?>" class="ghost-button">Read More</a>
+		<a href="<?php the_permalink(); ?>" class="ghost-button">Read More</a>
 		<br>
 		<br>
-		<?php 
+		<?php
 				$post_tags = get_the_tags();
-				if ($post_tags) {
-					foreach($post_tags as $tag)
-					{
-						echo '<ul class="tags">
-						<li><a href="' . get_tag_link($tag->term_id) . '">' . $tag->name . '</a></li></ul>';
-					} 
-				}
+		if ( $post_tags ) {
+			foreach ( $post_tags as $tag ) {
+				echo '<ul class="tags">
+						<li><a href="' . get_tag_link( $tag->term_id ) . '">' . $tag->name . '</a></li></ul>';
+			}
+		}
 
 
 
-		 ?>
+		?>
 			
 
 		</div>
