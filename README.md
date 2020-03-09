@@ -21,8 +21,7 @@ This is my current portfolio and my second Wordpress theme site I built. It cont
 # Working Demo of the Site
 [http://mjstokes.com/portfolioiii](https://www.mjstokes.com/portfolioiii)
 
-![alt text](lib/img/home.jpg)
-![alt text](lib/img/menu.jpg)
-![alt text](lib/img/work.jpg)
-![alt text](lib/img/blog.jpg)
+![alt text](lib/img/home.png)
+![alt text](lib/img/menu.png)
+![alt text](lib/img/blog.png)
 
