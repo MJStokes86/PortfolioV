@@ -19,7 +19,7 @@ This is my current portfolio and my second Wordpress theme site I built. It cont
 8. Animate
 
 # Working Demo of the Site
-[http://mjstokes.com/portfolioiii](https://www.mjstokes.com/portfolioiii)
+[http://mjstokes.com](https://www.mjstokes.com)
 
 ![alt text](lib/img/home.png)
 ![alt text](lib/img/menu.png)
